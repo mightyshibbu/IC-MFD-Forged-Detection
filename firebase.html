@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+    <div class="form-row">
+      <div class="col">Name
+        <input type="text" class="form-control" placeholder="name">
+      </div>
+      <div class="col">Age
+        <input type="text" class="form-control" placeholder="age">
+      </div>
+      <div class="col">Education
+        <input type="text" class="form-control" placeholder="education">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col">Username
+        <input type="text" class="form-control" placeholder="username">
+      </div>
+      <div class="col">password
+        <input type="password" class="form-control" placeholder="password">
+      </div>
+      <div class="col">Date of Detection
+        <input type="date" class="form-control" placeholder="Date">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col">Designation
+        <input type="text" class="form-control" placeholder="Designation">
+      </div>
+      <div class="col">
+        <label for="exampleFormControlFile1">Test Picture</label>
+        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+      </div>
+      <div class="col">
+        <label for="exampleFormControlFile1">Original Picture</label>
+    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+      </div>
+    </div>
+    <button class="btn btn-danger" type="submit">Submit form</button>
+  </form>
+  <!---------import plus console...---------->
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyA0UtieX63MaIhigElPCwr-gbhtZPun4M0",
+      authDomain: "icmfds-database.firebaseapp.com",
+      databaseURL: "https://icmfds-database-default-rtdb.firebaseio.com",
+      projectId: "icmfds-database",
+      storageBucket: "icmfds-database.appspot.com",
+      messagingSenderId: "540582945158",
+      appId: "1:540582945158:web:1e7594154123ec74884c07",
+      measurementId: "G-8BSN1GYD2K"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    import {getDatabase,ref,set,Login,Signup}
+    from "https://www.gstatic.com/firebasejs/9.17.1/firebase-database.js ;
+    const db = getDatabase();
+    //------refrences--------------------//
+    var loginbox = document.getElementById("Login");
+    var signupbox = document.getElementById("Signup")
+ function InsertData() {
+    set(ref(db,"Login/"+ sign-up),{
+        Loginid: loginbox.value,
+        Signup: signupbox
+ })
+ .then(()=>{
+    alert( " data stored successfully");
+ })
+ .catch((error)=>{
+    alert("unsuccessful , error"+error);
+ })
+}
+//---------Assign Event to btns------------------------------------------//
+insBtn.addEventListener( 'click',InsertData);
+
+  </script>
+  
+</body>
+</html>
