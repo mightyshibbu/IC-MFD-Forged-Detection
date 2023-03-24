@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="landing.css">
+    <title>Login-icmfd</title>
+    <style>
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(160, 158, 158);
+            color: white;
+            text-align: center;
+          }
+        legend{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 35px;
+            text-align: center;
+            margin: 30px;
+        }
+   
+    </style>
+</head>
+<body>
+    <legend> IMAGE COPY-MOVE FORGERY DETECTION </legend>
+    <br>
+    <br>
+        <div class="cont">
+            <div class="form sign-in">
+                <h2>Welcome</h2>
+                <label>
+                    <span>Email</span>
+                    <input type="email" />
+                </label>
+                <label>
+                    <span>Password</span>
+                    <input type="password" />
+                </label>
+                <p class="forgot-pass">Forgot password?</p>
+                <button class="submit"><a href="afterlogin.html"> Log-in </a></button>
+                <div class="footer">
+                    <a href="about.html">ABOUT</a>
+                    <a href="purpose.html">PURPOSE</a>
+                    <a href="team.html">TEAM</a>
+                </div>
+             
+            </div>
+            <div class="sub-cont">
+                <div class="img">
+                    <div class="img__text m--up">
+                     
+                        <h3>Don't have an account? Please Sign up!<h3>
+                    </div>
+                    <div class="img__text m--in">
+                    
+                        <h3>If you already has an account, just sign in.<h3>
+                    </div>
+                    <div class="img__btn">
+                        <span class="m--up">Sign Up</span>
+                        <span class="m--in">Sign In</span>
+                    </div>
+                </div>
+                <div class="form sign-up">
+                    <h2>Create your Account</h2>
+                    <label>
+                        <span>Set UserName</span>
+                        <input type="text" />
+                    </label>
+                    <label>
+                        <span>Set Password</span>
+                        <input type="password" />
+                    </label>
+                    <label>
+                        <span>Set Name</span>
+                        <input type="text" />
+                    </label>
+                    <label>
+                        <span>Enter User-ID</span>
+                        <input type="id" />
+                    </label>
+                    <label>
+                        <span>Upload Authorized Key</span>
+                        <input type="key" />
+                    </label>
+                   
+                <button class="submit"><a href="afterlogin.html"> Sign-up </a></button>
+            
+                    <div class="footer">
+                        <a href="about.html">ABOUT</a>
+                        <a href="purpose.html">PURPOSE</a>
+                        <a href="team.html">TEAM</a>
+                    </div>
+                </div>
+             
+
+                <script>
+                    document.querySelector('.img__btn').addEventListener('click', function() {
+                        document.querySelector('.cont').classList.toggle('s--signup');
+                    });
+                </script>
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+            
+   
+</body>
+</html>

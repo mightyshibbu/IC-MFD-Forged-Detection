@@ -1,0 +1,38 @@
+legend{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin: 30px;
+}
+.container {
+    height: 800px;
+    position: relative;
+    border-radius: 10%;
+    background-color: rgb(68, 64, 64);
+  }
+
+p
+    
+    {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-size: larger;
+        padding: 30px;
+      }
+      .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgb(160, 158, 158);
+        color: white;
+        text-align: center;
+      }
+
+
+
+
+
